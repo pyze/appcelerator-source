@@ -6,7 +6,7 @@
  * Please see the LICENSE included with this distribution for details.
  *
  */
-package com.pyze.appc;
+package ti.pyze;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.KrollFunction;
@@ -36,7 +36,7 @@ import com.pyze.android.inapp.templates.ui.InAppNotificationTemplateDialogFragme
 import com.pyze.android.tags.PyzePersonalizationIntelligence;
 import com.pyze.android.tags.TagsManager;
 
-@Kroll.module(name="PyzeAppcelerator", id="com.pyze.appc")
+@Kroll.module(name="PyzeAppcelerator", id="ti.pyze")
 public class PyzeAppceleratorModule extends KrollModule
 {
 

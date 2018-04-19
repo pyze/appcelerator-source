@@ -12,7 +12,7 @@ copyright: Copyright (c) 2018 by Your Company
 
 # these should not be edited
 name: PyzeAppcelerator
-moduleid: com.pyze.appc
+moduleid: ti.pyze
 guid: 74ccc3e7-1d35-48cf-a20e-4e70670f4a8d
 platform: android
 minsdk: 7.0.1.GA

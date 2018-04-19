@@ -13,7 +13,7 @@ win.add(label);
 win.open();
 
 // TODO: write your module tests here
-var pyzeappcelerator = require('com.pyze.appc');
+var pyzeappcelerator = require('ti.pyze');
 Ti.API.info("module is => " + pyzeappcelerator);
 
 label.text = pyzeappcelerator.example();

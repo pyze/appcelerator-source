@@ -8,7 +8,7 @@ TODO: Enter your module description here
 
 To access this module from JavaScript, you would do the following:
 
-    var pyzeappcelerator = require("com.pyze.appc");
+    var pyzeappcelerator = require("ti.pyze");
 
 The pyzeappcelerator variable is a reference to the Module object.
 
