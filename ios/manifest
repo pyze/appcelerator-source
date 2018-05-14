@@ -5,14 +5,14 @@
 version: 1.0.0
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
-description: PyzeAppcelerator
+description: Pyze
 author: Your Name
 license: Specify your license
 copyright: Copyright (c) 2018 by Your Company
 
 # these should not be edited
-name: PyzeAppcelerator
-moduleid: com.pyze.appc
-guid: 74ccc3e7-1d35-48cf-a20e-4e70670f4a8d
+name: Pyze
+moduleid: ti.pyze
+guid: eff49361-cd26-4675-8754-098ec21a9818
 platform: iphone
-minsdk: 7.0.1.GA
+minsdk: 7.1.0.v20180308150545
