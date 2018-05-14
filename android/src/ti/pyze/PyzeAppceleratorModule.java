@@ -82,7 +82,21 @@ public class PyzeAppceleratorModule extends KrollModule
 		Log.d(LCAT, "set example property: " + value);
 	}
 
+    /***
+     * Region Pyze
+     ***/
+    @Kroll.method
+    public void setUserOptOut(boolean isUserOptedOut) {
+        Pyze.setUserOptOut(isUserOptedOut);
+    }
 
+    @Kroll.method
+    public void deleteUser(boolean shouldDeleteUser) {
+        Pyze.deleteUser(shouldDeleteUser);
+    }
+    /***
+     End Region Pyze
+     ***/
 
     /***
      * Region Pyze Custom Event
