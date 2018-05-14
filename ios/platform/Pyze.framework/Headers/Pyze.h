@@ -269,7 +269,17 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  */
 +(void) setRemoteNotificationDeviceToken:(NSData *) deviceToken;
 
+
+/**
+ *  Use this API to set the push notification device token. This will trigger Pyze to update the device token, which internally would be used to send the push notification. Call this API in Application's AppDelegate method application:didRegisterForRemoteNotificationsWithDeviceToken:.
+ *  The method accepts the token as NSStirng.
+ *
+ *  @param deviceToken device Token bytes received from the AppDelegate's method call.
+ 
+ *  - Since: 5.0.1
+ */
 +(void) setRemoteNotificationDeviceTokenString:(NSString *) deviceToken;
+
 
 /**
  *  Use this API to process the push/remote notification. Call this everytime when you receive the remote notification from application:didReceiveRemoteNotification or application:didReceiveRemoteNotification:fetchCompletionHandler:. 
@@ -440,6 +450,20 @@ typedef NS_ENUM(NSInteger, PyzeDeepLinkStatus) {
  *  @return Pyze instance type.
  */
 + (Pyze*) sharedPyze;
+
+/**
+ *  Will stop collecting all data
+ *
+ *  @param shouldOptout Boolean value to decide if data tracking should be stopped.
+ */
++ (void) setUserOptOut:(BOOL)shouldOptout;
+
+/**
+ *  Will stop collecting all data and delete existing data from the server
+ *
+ *  @param shouldDelete Boolean value to decide if data collection should be stopped and delete existing data from the server
+ */
++ (void) deleteUser:(BOOL)shouldDelete;
 
 
 /**

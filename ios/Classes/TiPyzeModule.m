@@ -427,8 +427,19 @@
 //------------------------------------------------------------------------------------*****
 //*****------------------------------------------------------------------------------------
 
+#pragma mark - Opt out data collection
 
+- (id) setUserOptOut:(id)arg {
+    ENSURE_ARG_COUNT(arg, 1);
+    BOOL shouldOptOut = NUMBOOL(arg);
+    [Pyze setUserOptOut:shouldOptOut];
+}
 
+- (id) deleteUser:(id)arg {
+    ENSURE_ARG_COUNT(arg, 1);
+    BOOL shouldDelete = NUMBOOL(arg);
+    [Pyze deleteUser:shouldDelete];
+}
 
 
 #pragma mark - PyzePersonalizationIntelligence

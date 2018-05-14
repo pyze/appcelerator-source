@@ -42,6 +42,31 @@
  */
 - (id) getPyzeAppInstanceId;
 
+#pragma mark - Opt out data collection
+
+/**
+ *  Will stop collecting all data
+ *
+ *  @param shouldOptout Boolean value to decide if data tracking should be stopped.
+ *
+ *  usage:
+ *      var pyze = require('ti.pyze');
+ *      pyze.setUserOptOut(true);
+ */
+- (id) setUserOptOut:(id)arg;
+
+/**
+ *  Will stop collecting all data and delete existing data from the server
+ *
+ *  @param shouldDelete Boolean value to decide if data collection should be stopped and delete existing data from the server
+ *
+ *  usage:
+ *      var pyze = require('ti.pyze');
+ *      pyze.deleteUser(true);
+ */
+- (id) deleteUser:(id)arg;
+
+
 #pragma mark - Pyze Notifications
 
 /**
