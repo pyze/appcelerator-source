@@ -23,9 +23,9 @@
     return YES;
 }
 
-- (void)pyze_application:(UIApplication *)application willFinishLaunchingWithOptions:(NSData *)deviceToken
+- (void)pyze_application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self pyze_application:application willFinishLaunchingWithOptions:deviceToken];
+    [self pyze_application:application willFinishLaunchingWithOptions:launchOptions];
     [Pyze initializeWithLogLevel:PyzelogLevelAll];
 }
 
